@@ -11,6 +11,7 @@ import { EventEmitter } from '@angular/core';
 export class GameControlComponent implements OnInit {
   //variable counter that will count from 0 or continue
   counter = 0;
+  
  
   //variable timer is ID that allows to use 
   //the clearInterval() method to cancel the timer
