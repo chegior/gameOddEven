@@ -1,5 +1,15 @@
-<app-game-control
-  
->
+<div class="container">
+  <app-game-control (counterChange) = "onCounted($event)"></app-game-control>
+  <hr>
+  <div class="row" >
+      <div style="color: blue" *ngIf="isOdd()else Even"><app-odd></app-odd></div>
+      <ng-template #Even ><app-even style="color: red"></app-even></ng-template>        
+  </div>
+  <!-- <app-odd *ngIf="isOdd()" style="color: red"></app-odd>
+  <app-even *ngIf="!isOdd()" style="color: blue"></app-even> -->
 
-</app-game-control>
+</div>
+<!--
+  (counterChange) = event from the Game-Control using @OutPut
+  onCounted belong to the APP COMPONENT : PARENT
+-->
