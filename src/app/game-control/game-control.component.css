@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+#boxCounter {
+    
+    border:2px solid green;
+    
+    
+}
+div #boxCounter{
+    border: green,1px;
+    background-color: limegreen;
+    color:black;
+}
+
+.row{
+    display:flex;
+}
+.col-sm-3 {
+    flex:1;
+    float: none;
+    display: inline-block;
+    text-align: center; 
+  }
